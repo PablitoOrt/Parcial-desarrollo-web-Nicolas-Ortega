@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="tema-claro">
+    <header>
+        <div class="header-contenido">
+            <h1>FICHA PERSONAL</h1>
+            <nav class="menu-navegacion">
+                <a href="Ficha Personal.html">Inicio</a>
+                <a href="formulario.html">Contacto</a>
+                <button id="btn-tema" class="boton-tema-header">Tema</button>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="contenedor">
+        <div class="formulario-contenedor">
+            <h1 class="nombre-formulario">Nicolas Ortega</h1>
+            
+            <form id="formulario-contacto" class="formulario">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <div class="campo-formulario-input-container">
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre y apellido">
+                    </div>
+                    <span class="mensaje-error" id="error-nombre"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="apellido">Edad:</label>
+                    <div class="campo-formulario-input-container">
+                        <input type="number" id="apellido" name="apellido" placeholder="Ingresa tu edad">
+                    </div>
+                    <span class="mensaje-error" id="error-apellido"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <div class="campo-formulario-input-container">
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                    </div>
+                    <span class="mensaje-error" id="error-email"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Comentario:</label>
+                    <div class="campo-formulario-input-container">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu comentario aquí..."></textarea>
+                    </div>
+                    <span class="mensaje-error" id="error-mensaje"></span>
+                </div>
+
+                <div class="botones-formulario">
+                    <button type="submit" class="boton-enviar">ENVIAR</button>
+                    <button type="button" id="btn-limpiar" class="boton-limpiar">BORRAR</button>
+                </div>
+            </form>
+
+            <div id="mensaje-exito" class="mensaje-exito" style="display: none;">
+                 ¡Formulario enviado correctamente!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-contenido">
+            <img src="Imagenes/logo de uade.jpg" alt="UADE Logo" class="footer-logo">
+            <p class="footer-texto">© 2025 Todos los derechos reservados</p>
+            <a href="https://pablitoort.github.io/Pagina-web-shooping/" target="_blank">
+                <img src="Imagenes/Github-Logo-PNG-Pic.png" alt="GitHub Logo" class="github-imagen">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="validacion.js"></script>
+</body>
+</html>
+
